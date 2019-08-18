@@ -6,11 +6,13 @@ import 'materialize-css/dist/css/materialize.min.css';
 function App() {
   return (
     <div>
+
     <nav class = "light-blue darken-4">
     <div class="nav-wrapper">
     <a href="#" class="brand-logo center">Tacos</a>
     </div>
     </nav>
+
     <div class = "container">
     <ul class="collection with-header">
 
@@ -18,36 +20,51 @@ function App() {
     <li class="collection-item">
       <span class = "title">Tacos Al Pastor</span>
       <a href="" class="secondary-content">
-        <i class="material-icons blue-text">image</i>
+        <a href="#" class = "btn fix cyan darken-4">
+          <span>Show</span>
+          <i class="material-icons blue-text right">image</i>
+      </a>
       </a>
     </li>
 
     <li class="collection-item">
       <span class = "title">Tacos Dorados</span>
       <a href="" class="secondary-content">
-        <i class="material-icons blue-text">image</i>
+        <a href="#" class = "btn fix cyan darken-4">
+          <span>Show</span>
+          <i class="material-icons blue-text right">image</i>
+      </a>
       </a>
     </li>
 
     <li class="collection-item">
       <span class = "title">Tacos Doblados</span>
       <a href="" class="secondary-content">
-        <i class="material-icons blue-text">image</i>
+        <a href="#" class = "btn fix cyan darken-4">
+          <span>Show</span>
+          <i class="material-icons blue-text right">image</i>
+      </a>
       </a>
     </li>
 
     <li class="collection-item">
       <span class = "title">Tacos de Carnitas</span>
       <a href="" class="secondary-content">
-        <i class="material-icons blue-text">image</i>
+        <a href="#" class = "btn fix cyan darken-4">
+          <span>Show</span>
+          <i class="material-icons blue-text right">image</i>
+      </a>
       </a>
     </li>
 
     <li class="collection-item">
-      <span class = "title">Tacos de Pollo</span>
-      <a href="" class="secondary-content">
-        <i class="material-icons blue-text">image</i>
-      </a>
+    <span class = "title">Tacos de Pollo</span>
+    <a href="" class="secondary-content">
+      <a href="#" class = "btn fix cyan darken-4">
+        <span>Show</span>
+        <i class="material-icons blue-text right">image</i>
+    </a>
+    </a>
     </li>
 
     </ul>
