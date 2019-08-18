@@ -3,6 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 import 'materialize-css/dist/css/materialize.min.css';
+
+var info = "Hola";
+
+function Print(element){
+  element.color = 'red';
+  element.render();
+}
+
+
 function App() {
   return (
     <div>
@@ -20,7 +29,7 @@ function App() {
     <li class="collection-item">
       <span class = "title">Tacos Al Pastor</span>
       <a href="" class="secondary-content">
-        <a href="#" class = "btn fix cyan darken-4">
+        <a href="#Pastor" class = "btn fix cyan darken-4">
           <span>Show</span>
           <i class="material-icons blue-text right">image</i>
       </a>
@@ -30,7 +39,7 @@ function App() {
     <li class="collection-item">
       <span class = "title">Tacos Dorados</span>
       <a href="" class="secondary-content">
-        <a href="#" class = "btn fix cyan darken-4">
+        <a href="#Dorados" class = "btn fix cyan darken-4">
           <span>Show</span>
           <i class="material-icons blue-text right">image</i>
       </a>
@@ -40,7 +49,7 @@ function App() {
     <li class="collection-item">
       <span class = "title">Tacos Doblados</span>
       <a href="" class="secondary-content">
-        <a href="#" class = "btn fix cyan darken-4">
+        <a class = "button fix cyan darken-4" onclick={info = "Doblados"}>
           <span>Show</span>
           <i class="material-icons blue-text right">image</i>
       </a>
@@ -50,7 +59,7 @@ function App() {
     <li class="collection-item">
       <span class = "title">Tacos de Carnitas</span>
       <a href="" class="secondary-content">
-        <a href="#" class = "btn fix cyan darken-4">
+        <a href="#Carnitas" class = "btn fix cyan darken-4">
           <span>Show</span>
           <i class="material-icons blue-text right">image</i>
       </a>
@@ -60,15 +69,28 @@ function App() {
     <li class="collection-item">
     <span class = "title">Tacos de Pollo</span>
     <a href="" class="secondary-content">
-      <a href="#" class = "btn fix cyan darken-4">
+      <a href="#Pollo" class = "btn fix cyan darken-4">
         <span>Show</span>
         <i class="material-icons blue-text right">image</i>
-    </a>
+      </a>
     </a>
     </li>
 
+
     </ul>
+    </div>
+
+    <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="card blue-grey darken-1" id="carta">
+        <div class="card-content white-text">
+          <span class="card-title">Informacion de los Tacos</span>
+          {""}
+        </div>
       </div>
+    </div>
+  </div>
+
     </div>
   );
 }
