@@ -6,13 +6,9 @@ import Coleccion from './Coleccion';
 
 import 'materialize-css/dist/css/materialize.min.css';
 
-var info = "Hola";
-
-function Print(element){
-  info = "red"
+function Input(){
 
 }
-
 
 class App extends Component{
   render(){
@@ -29,7 +25,20 @@ class App extends Component{
     <Coleccion/>
     </div>
 
+    <div>
+    <button onclick = "Input()">Tacos Al Pastor</button>
+    <button onclick = "Input()">Tacos Dorados</button>
+    <button onclick = "Input()">Tacos Doblados</button>
+    <button onclick = "Input()">Tacos de Carnitas</button>
+    <button onclick = "Input()">Tacos de Pollo</button>
+    </div>
+
+    <ul id="list">
+      <li>Hola</li>
+    </ul>
+
     <Carta/>
+
 
     </div>
   );
