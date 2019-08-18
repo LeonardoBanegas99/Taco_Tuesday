@@ -25,18 +25,6 @@ class App extends Component{
     <Coleccion/>
     </div>
 
-    <div>
-    <button onclick = "Input()">Tacos Al Pastor</button>
-    <button onclick = "Input()">Tacos Dorados</button>
-    <button onclick = "Input()">Tacos Doblados</button>
-    <button onclick = "Input()">Tacos de Carnitas</button>
-    <button onclick = "Input()">Tacos de Pollo</button>
-    </div>
-
-    <ul id="list">
-      <li>Hola</li>
-    </ul>
-
     <Carta/>
 
 
