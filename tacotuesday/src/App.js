@@ -47,6 +47,8 @@ class App extends Component{
     <div class = "container">
     <Coleccion/>
     </div>
+
+    
     {todos}
 
     </div>
