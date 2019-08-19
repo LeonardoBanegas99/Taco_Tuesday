@@ -8,8 +8,8 @@ class Carta extends Component{
       <div class="col s6 offset-s3">
         <div class="card blue-grey darken-1" id="carta">
           <div class="card-content white-text">
-            <span class="card-title">Informacion de los Tacos</span>
-            {"info"}
+            <span class="card-title">{this.props.titulo}</span>
+            {this.props.cuerpo}
           </div>
         </div>
       </div>
