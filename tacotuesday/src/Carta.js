@@ -9,7 +9,7 @@ class Carta extends Component{
       <div class="card">
         <div class="card-image">
           <img src={this.props.imagendir}/>
-          <span class="card-title black-text bold 12pt arial">{this.props.titulo}</span>
+          <span class="card-title black-text">{this.props.titulo}</span>
           </div>
       <div class="card-content">
         {this.props.cuerpo}
