@@ -6,16 +6,19 @@ class Carta extends Component{
     return(
       <div className = "Carta" class="row">
       <div class="col s6 offset-s3">
-        <div class="card blue-grey darken-1" id="carta">
-          <div class="card-content white-text">
-            <span class="card-title">{this.props.titulo}</span>
-            {this.props.cuerpo}
+      <div class="card">
+        <div class="card-image">
+          <img src={this.props.imagendir}/>
+          <span class="card-title black-text bold 12pt arial">{this.props.titulo}</span>
           </div>
-        </div>
+      <div class="card-content">
+        {this.props.cuerpo}
       </div>
-    </div>
-  );
-}
+      </div>
+      </div>
+      </div>
+    );
+  }
 }
 
 export default Carta;
