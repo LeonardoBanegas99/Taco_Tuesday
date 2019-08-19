@@ -16,6 +16,8 @@ class App extends Component{
     }
   }
   render(){
+    var monkey = JSON.stringify(this.state.todos);
+    localStorage.setItem('monkey',monkey);
     const todos = this.state.todos.map((todo,i) =>{
       return(
         <div className = "Carta" class="row">
