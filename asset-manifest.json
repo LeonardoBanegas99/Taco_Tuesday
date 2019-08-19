@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tacos/static/css/main.bd7417a7.chunk.css",
+    "main.js": "/tacos/static/js/main.eae480fc.chunk.js",
+    "main.js.map": "/tacos/static/js/main.eae480fc.chunk.js.map",
+    "runtime~main.js": "/tacos/static/js/runtime~main.3edbe304.js",
+    "runtime~main.js.map": "/tacos/static/js/runtime~main.3edbe304.js.map",
+    "static/css/2.ae9e8b99.chunk.css": "/tacos/static/css/2.ae9e8b99.chunk.css",
+    "static/js/2.82f42c46.chunk.js": "/tacos/static/js/2.82f42c46.chunk.js",
+    "static/js/2.82f42c46.chunk.js.map": "/tacos/static/js/2.82f42c46.chunk.js.map",
+    "index.html": "/tacos/index.html",
+    "precache-manifest.f1141f6fc40f5f9c40a17373367bf7fb.js": "/tacos/precache-manifest.f1141f6fc40f5f9c40a17373367bf7fb.js",
+    "service-worker.js": "/tacos/service-worker.js",
+    "static/css/2.ae9e8b99.chunk.css.map": "/tacos/static/css/2.ae9e8b99.chunk.css.map",
+    "static/css/main.bd7417a7.chunk.css.map": "/tacos/static/css/main.bd7417a7.chunk.css.map",
+    "static/media/logo.svg": "/tacos/static/media/logo.5d5d9eef.svg"
+  }
+}
