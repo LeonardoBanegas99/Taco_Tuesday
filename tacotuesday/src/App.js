@@ -3,15 +3,36 @@ import logo from './logo.svg';
 import './App.css';
 import Carta from './Carta';
 import Coleccion from './Coleccion';
+import {todos} from './todos.json';
 
 import 'materialize-css/dist/css/materialize.min.css';
 
-function Input(){
-
-}
 
 class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      todos
+    }
+  }
   render(){
+    const todos = this.state.todos.map((todo,i) =>{
+      return(
+        <div className = "Carta" class="row">
+        <div class="col s6 offset-s3">
+        <div class="card">
+          <div class="card-image">
+            <img src={todo.imagendir}/>
+            <span class="card-title black-text">{todo.titulo}</span>
+            </div>
+        <div class="card-content">
+          {todo.cuerpo}
+        </div>
+        </div>
+        </div>
+        </div>
+      );
+    })
   return (
     <div>
 
@@ -24,15 +45,7 @@ class App extends Component{
     <div class = "container">
     <Coleccion/>
     </div>
-
-    <Carta imagendir = "./tacos_alpastor.jpg" titulo= "Tacos Al Pastor" cuerpo="El ingrediente principal para estos tacos es la carne de cerdo adobada con achiote o chile ancho, naranja, vinagre, pimienta. Estos se acompañan con un trozo de piña, la tortilla es pequeña y en ocasiones se usan dos, una sobre otra."/>
-    <Carta imagendir = "./tacos_dorados.jpg" titulo= "Tacos Dorados" cuerpo="Estos tacos se elaboran a partir de tortillas de maíz recién hechas y se rellenan por lo regular de carne deshebrada de pollo, res, cerdo o barbacoa, frijol o bien de papa con queso; la tortilla se enrolla y se fríe en abundante aceite o manteca de cerdo para que tome una consistencia dorada y firme. Cuando se sirven, por lo regular se les pone encima una capa de crema, queso rallado, lechuga picada y salsa al gusto verde o roja"/>
-    <Carta imagendir = "./Tacos_Doblados.jpg" titulo= "Tacos Doblados" cuerpo="Estos tacos se hacen con una tortilla doblada y frita en aceite, lo que la hace dura y lista para rellenarse de papas, carne, frijoles, etc. además de algún tipo de ensalada de hojas verdes."/>
-    <Carta imagendir = "./Tacos_Carnitas.jpg" titulo= "Tacos de Carnitas" cuerpo="Elaborados con carne de cerdo cocida en manteca (grasa) del mismo."/>
-    <Carta imagendir = "./Tacos_Pollo.jpg" titulo= "Tacos de Pollo" cuerpo="Este taco se elabora con pollo cocido y desmenuzado, mole, cebolla, y se acompaña con una tortilla elaborada con, harina de maíz, harina de trigo, manteca de cerdo, sal y agua."/>
-
-
-
+    {todos}
 
     </div>
   );
